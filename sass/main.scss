@@ -1,0 +1,11 @@
+@use "abstracts";
+@use "base";
+@use "components";
+@use "layouts";
+@use "utils";
+
+.col {
+	background-color: #aaa;
+	padding: 3rem;
+	border: 1px solid #777;
+}

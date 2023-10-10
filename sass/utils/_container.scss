@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+.container {
+	width: min(100%, $max-container-width);
+	margin-inline: auto;
+
+	&-narrow {
+		width: min(100%, $max-container-width-narrow);
+	}
+
+	&-wide {
+		width: min(100%, $max-container-width-wide);
+	}
+}
+
+.flow > *:where(:not(:first-child)) {
+	margin-top: var(--flow-space, 1em);
+}

@@ -1,0 +1,78 @@
+@use "colours" as *;
+@use "sizes" as *;
+@use "typography" as *;
+
+$theme: $light;
+$primary-colour: map-get(map-get($theme, "primary"), "5");
+$secondary-colour: map-get(map-get($theme, "red"), "9");
+$neutral-colour: map-get(map-get($theme, "neutral"), "2");
+
+// BREAKPOINTS
+$break-small: 30em;
+$break-medium: 45em;
+$break-large: 65em;
+
+// BODY
+$body-font-family: "Open Sans", sans-serif;
+$body-font-weight: 400;
+$body-font-size: 1rem;
+$body-text-color: $black;
+$body-background-color: $white;
+$body-line-height: 1.5;
+$link-color: initial;
+$link-color-hover: initial;
+
+$border-radius-1: $size-2;
+$border-radius-2: $size-4;
+$border-radius-3: $size-6;
+$border-radius-4: $size-8;
+
+// HEADINGS
+$heading-color-default: $neutral-colour;
+$heading-font-weight: $fw-bold;
+$heading-line-height: 1.1;
+
+$heading-1-font-size: $font-size-9;
+$heading-1-color: $heading-color-default;
+$heading-2-font-size: $font-size-8;
+$heading-2-color: $heading-color-default;
+$heading-3-font-size: $font-size-7;
+$heading-3-color: $heading-color-default;
+
+// LAYOUTS
+$grid-gap: $size-4;
+$flex-group-gap: $size-4;
+
+$hero-padding-block: clamp(15rem, 15vh, 20rem);
+$section-padding-block: clamp(5rem, 10vh, 6rem);
+
+$max-container-width: 50rem;
+$max-container-width-narrow: 40rem;
+$max-container-width-wide: 70rem;
+
+// SITE HEADER
+$header-background: map-get(map-get($theme, "primary"), "3");
+$header-color: map-get(map-get($theme, "neutral"), "9");
+$header-padding: $size-8 0;
+$header-margin: 0;
+$header-jusitifcation-small-screens: center;
+$header-jusitifcation-large-screens: space-between;
+$header-alignment: center;
+
+// BUTTONS
+$button-padding: 0.75em 2em;
+$button-border-radius: $border-radius-1;
+$button-font-size: $font-size-4;
+$button-font-weight: $fw-bold;
+$button-border: 0;
+$button-transition: 200ms ease;
+
+$button-primary: $primary-colour;
+$button-text-primary: $body-background-color;
+$button-hover-primary: $primary-colour;
+$button-hover-text-primary: $body-background-color;
+
+$button-secondary: $secondary-colour;
+$button-text-secondary: $neutral-colour;
+$button-hover-secondary: $secondary-colour;
+$button-hover-text-secondary: $neutral-colour;

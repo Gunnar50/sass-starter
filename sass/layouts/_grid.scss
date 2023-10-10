@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+.even-col {
+	display: grid;
+	gap: $grid-gap;
+
+	@include mq($break-medium) {
+		grid-auto-flow: column;
+		grid-auto-columns: 1fr;
+	}
+}

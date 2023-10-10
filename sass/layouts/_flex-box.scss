@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+%flex {
+	display: flex;
+}
+%flex-center {
+	justify-content: center;
+	align-items: center;
+}
+%flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex {
+	@extend %flex;
+	&.even-col {
+		flex-direction: row;
+		& > * {
+			flex-basis: 100%;
+		}
+	}
+	&.center {
+		@extend %flex-center;
+	}
+	&.wrap {
+		@extend %flex-wrap;
+	}
+}
+
+.flex-group {
+	@extend %flex;
+	@extend %flex-wrap;
+	width: fit-content;
+	column-gap: $flex-group-gap;
+	row-gap: calc($flex-group-gap/2);
+	&.center {
+		@extend %flex-center;
+	}
+}

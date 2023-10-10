@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+body {
+	--bg-color: $body-background-color;
+	--text-color: $body-text-color;
+
+	font-family: $body-font-family;
+	font-weight: $body-font-weight;
+	font-size: $body-font-size;
+	color: var(--text-color);
+	background-color: var(--bg-color);
+	line-height: $body-line-height;
+}
+
+a {
+	color: $link-color;
+}
+
+a:is(:hover, :focus) {
+	color: $link-color-hover;
+}

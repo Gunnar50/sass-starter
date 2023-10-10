@@ -1,0 +1,44 @@
+$-sans: system-ui, sans-serif;
+$-serif: serif;
+
+$font-family-base: $-sans;
+$font-family-accent: $-sans;
+
+$font-sizes: (
+	"small": (
+		"9": 3.75rem,
+		"8": 2.25rem,
+		"7": 1.75rem,
+		"6": 1.125rem,
+		"5": 1.125rem,
+		"4": 1rem,
+		"3": 0.925rem,
+		"2": 0.875rem,
+	),
+	"large": (
+		"9": 3.75rem,
+		"8": 3rem,
+		"7": 1.75rem,
+		"6": 1.3125rem,
+		"5": 1.125rem,
+		"4": 1rem,
+		"3": 0.925rem,
+		"2": 0.875rem,
+	),
+);
+
+$font-size-3: var(--fs-3);
+$font-size-4: var(--fs-4);
+$font-size-5: var(--fs-5);
+$font-size-6: var(--fs-6);
+$font-size-7: var(--fs-7);
+$font-size-8: var(--fs-8);
+$font-size-9: var(--fs-9);
+
+$-fw-400: 400;
+$-fw-500: 500;
+$-fw-700: 700;
+
+$fw-default: $-fw-400;
+$fw-semibold: $-fw-500;
+$fw-bold: $-fw-700;
